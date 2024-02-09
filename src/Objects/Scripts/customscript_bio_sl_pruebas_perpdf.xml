@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_bio_sl_pruebas_perpdf">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Biomont SL Pruebas - Personalizacion PDF</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/Biomont_SuiteScript/Pruebas/Bio.Suitelet.Pruebas.PersonalizacionPDF.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_bio_sl_pruebas_perpdf">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Biomont SL Pruebas - Personalizacion PDF</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>
