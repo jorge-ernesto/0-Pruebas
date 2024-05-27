@@ -1,0 +1,32 @@
+---- Notas ----
+
+Enlaces
+    https://6462530-sb1.app.netsuite.com/app/accounting/transactions/itemrcpt.nl?id=1770973&whence=&cmid=1716407142856_10659
+    https://6462530-sb1.app.netsuite.com/app/common/scripting/scriptedrecord.nl?id=INVENTORYDETAIL
+    https://6462530-sb1.app.netsuite.com/app/common/custom/custentryform.nl?id=414&e=T&ft=INVENTORYDETAIL&sbtp=InventoryDetail&whence=
+    https://6462530-sb1.app.netsuite.com/app/accounting/transactions/inventory/numbered/inventorydetail.nl?popup=T&id=465636&e=T
+
+Scripts
+    currentRecord = N.currentRecord.get();
+    currentRecord.getSublist({ sublistId: 'inventorydetail' });
+    currentRecord.getSublist({ sublistId: 'inventoryassignment' });
+
+    let columnItem = currentRecord.getCurrentSublistValue({
+                                sublistId: 'inventoryassignment',
+                                fieldId: 'internalid',
+                                line: 1
+                            });
+
+    let columnItem = currentRecord.getCurrentSublistValue({
+                                sublistId: 'inventoryassignment',
+                                fieldId: 'receiptinventorynumber',
+                                line: 1
+                            });
+
+    currentRecord.getValue('id')
+
+Notas
+    - Los lotes no deberian ser unicos???
+    - El record Detalle de Inventario (inventorydetail):
+        - Reconoce Bio.Client.Test.DetalleInventario.js
+        - No reconoce Bio.UserEvent.Test.DetalleInventario.js

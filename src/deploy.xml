@@ -3,10 +3,19 @@
         <path>~/AccountConfiguration/*</path>
     </configuration>
     <files>
-        <path>~/FileCabinet/*</path>
+        <!-- POR DEFECTO -->
+        <!-- <path>~/FileCabinet/*</path> -->
+
+        <!-- SANDBOX -->
+        <path>~/FileCabinet/SuiteScripts/Biomont_SuiteScript/Pruebas/*</path>
+        <!-- <path>~/FileCabinet/SuiteScripts/Biomont_SuiteScript/Records/Detalle de Inventario/*</path> -->
     </files>
     <objects>
-        <path>~/Objects/*</path>
+        <!-- POR DEFECTO -->
+        <!-- <path>~/Objects/*</path> -->
+
+        <!-- SANDBOX -->
+        <path>~/Objects/Scripts/Pruebas/*</path>
     </objects>
     <translationimports>
         <path>~/Translations/*</path>
